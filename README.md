@@ -28,6 +28,7 @@ service database that stores movies in a dynamically resizing array.
 
 ## Project Structure
 collections/
+
 ├── Movie.java
 
 ├── MovieADT.java
