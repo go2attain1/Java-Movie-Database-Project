@@ -1,4 +1,4 @@
-# Java Movie-Database Project
+# Java Movie Database Project
 
 A Java project demonstrating interface implementation, abstract class extension,
 array-based data structures, and unit testing. It models a simplified streaming
