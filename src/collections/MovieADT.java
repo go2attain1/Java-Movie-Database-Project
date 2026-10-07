@@ -130,7 +130,9 @@ public abstract class MovieADT
         if (this.getClass() == other.getClass())
         {
             Movie movie2 = (Movie)other;
-            return this.getTitle().equals(movie2.getTitle());
+            if (this.getTitle().equals(movie2.getTitle())) {
+                return this.getGenre().equals(movie2.getGenre());
+            }
         }
         return false;
     }

@@ -110,7 +110,6 @@ public class NetvidsDatabaseTest extends TestCase {
     public void testRemove2() {
         Movie movie22;
         movie22 = null;
-        nd1.addMovie(movie22);
         Exception thrown2 = null;
         try {
             nd1.remove(movie22);
@@ -124,14 +123,13 @@ public class NetvidsDatabaseTest extends TestCase {
         assertEquals(false, nd1.contains(movie18));
 
     }
-    
     // ----------------------------------------------------------
     /**
      * Tests that the expandCapacity() method returns the expected output
      */
     public void testExpandCapacity() {
         int original = nd1.capacity();
-        for (int i = nd1.size(); i <= nd1.capacity(); i++) {
+        for (int i = nd1.size(); i <= original; i++) {
             Movie temp = new Movie("Title" + i);
             nd1.addMovie(temp);
         }
